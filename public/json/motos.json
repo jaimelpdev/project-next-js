@@ -1,0 +1,144 @@
+{
+  "motos": [
+    {
+      "id": 1,
+      "name": "R 1250 GS",
+      "brand": "BMW",
+      "image": "../imgs/motos/bmw-r1250gs.webp",
+      "description": "La BMW R 1250 GS es una motocicleta de aventura diseñada para superar cualquier terreno. Con un motor bóxer de 1254 cc y tecnología avanzada como control de tracción y modos de conducción, es una máquina versátil y confiable. Esta motocicleta es ideal para aquellos que buscan una experiencia de conducción emocionante y segura, ya sea en carretera o fuera de ella. La R 1250 GS ofrece una ergonomía excepcional, permitiendo largas jornadas de viaje sin fatiga. Además, su sistema de suspensión ajustable y su robusto chasis garantizan una estabilidad y maniobrabilidad inigualables. Con características adicionales como el sistema de navegación integrado y los faros LED adaptativos, esta moto está preparada para cualquier aventura."
+    },
+    {
+      "id": 2,
+      "name": "Scrambler Icon",
+      "brand": "Ducati",
+      "image": "../imgs/motos/ducati-scrambler-icon.webp",
+      "description": "La Ducati Scrambler Icon es una motocicleta retro moderna que mezcla estilo clásico con tecnología contemporánea. Su motor de 803 cc y su diseño versátil la hacen ideal para ciudad y aventuras off-road ligeras. La Scrambler Icon destaca por su estética minimalista y su facilidad de manejo, lo que la convierte en una opción perfecta tanto para pilotos novatos como experimentados. Su asiento cómodo y su posición de conducción relajada permiten disfrutar de cada viaje al máximo. Además, cuenta con una amplia gama de accesorios personalizables, permitiendo a los propietarios adaptar la moto a su estilo personal. Con su combinación de rendimiento y estilo, la Scrambler Icon es una verdadera joya en el mundo de las motocicletas."
+    },
+    {
+      "id": 3,
+      "name": "Panigale V4",
+      "brand": "Ducati",
+      "image": "../imgs/motos/ducati-panigale-v4.webp",
+      "description": "La Ducati Panigale V4 es una superbike de última generación, equipada con un motor V4 de 1103 cc que ofrece un rendimiento extremo y tecnología de competición, siendo una de las motos más avanzadas en su categoría. Esta motocicleta está diseñada para aquellos que buscan la máxima adrenalina en cada curva y recta. Con su chasis ligero y aerodinámico, la Panigale V4 ofrece una agilidad y precisión excepcionales en la pista. Su sistema de frenos de alta gama y su suspensión ajustable garantizan un control total en cualquier situación. Además, cuenta con una serie de ayudas electrónicas al piloto, como el control de tracción y el ABS en curva, que mejoran la seguridad y el rendimiento. La Panigale V4 no solo es una máquina de velocidad, sino también una obra de arte en términos de diseño y tecnología."
+    },
+    {
+      "id": 4,
+      "name": "Multistrada V4",
+      "brand": "Ducati",
+      "image": "../imgs/motos/ducati-multistrada-v4.webp",
+      "description": "La Ducati Multistrada V4 es una motocicleta de aventura premium, equipada con un motor V4 Granturismo de 1158 cc y tecnología avanzada para brindar comodidad y rendimiento en cualquier tipo de terreno. Esta moto está diseñada para los viajeros más exigentes, ofreciendo una combinación perfecta de potencia, confort y versatilidad. Su sistema de suspensión electrónica se adapta automáticamente a las condiciones del camino, proporcionando una conducción suave y estable. La Multistrada V4 también cuenta con un amplio conjunto de características de seguridad, incluyendo el radar delantero y trasero para el control de crucero adaptativo y la detección de ángulo muerto. Con su capacidad para recorrer largas distancias sin esfuerzo y su diseño ergonómico, esta motocicleta es la compañera ideal para cualquier aventura."
+    },
+    {
+      "id": 5,
+      "name": "CBR600RR",
+      "brand": "Honda",
+      "image": "../imgs/motos/honda-cbr600rr.webp",
+      "description": "La Honda CBR600RR es una motocicleta deportiva icónica conocida por su rendimiento excepcional, diseño aerodinámico y tecnología avanzada. Desde su lanzamiento, se ha destacado como una máquina capaz de ofrecer emoción tanto en carretera como en pista. Su motor de 599 cc proporciona una aceleración rápida y una velocidad máxima impresionante, mientras que su chasis ligero y su suspensión ajustable garantizan una maniobrabilidad precisa. La CBR600RR también está equipada con un sistema de frenos de alto rendimiento y una serie de ayudas electrónicas al piloto, como el control de tracción y el ABS. Con su diseño agresivo y su rendimiento superior, esta motocicleta es una opción popular entre los entusiastas de las motos deportivas."
+    },
+    {
+      "id": 6,
+      "name": "Africa Twin",
+      "brand": "Honda",
+      "image": "../imgs/motos/honda-africa-twin.webp",
+      "description": "La Honda Africa Twin es una motocicleta de aventura reconocida por su capacidad todoterreno y comodidad en largos viajes. Su motor de 1084 cc y sus opciones de transmisión automática DCT la hacen única en su segmento. Esta moto está diseñada para enfrentar los terrenos más difíciles, desde caminos de tierra hasta rutas de montaña. Su robusto chasis y su suspensión de largo recorrido proporcionan una estabilidad y un control excepcionales en cualquier condición. La Africa Twin también cuenta con una serie de características avanzadas, como el control de tracción ajustable y los modos de conducción personalizables, que permiten al piloto adaptar la moto a sus necesidades específicas. Con su combinación de rendimiento, comodidad y tecnología, la Africa Twin es una opción ideal para los aventureros más exigentes."
+    },
+    {
+      "id": 7,
+      "name": "CB500X",
+      "brand": "Honda",
+      "image": "../imgs/motos/honda-cb500x.webp",
+      "description": "La Honda CB500X es una motocicleta versátil que combina el confort de una touring con la agilidad de una moto urbana. Equipada con un motor bicilíndrico de 471 cc, ofrece una potencia equilibrada y un consumo eficiente de combustible, ideal tanto para viajes largos como para el uso diario. Su diseño ergonómico y su asiento cómodo permiten una conducción relajada, mientras que su suspensión de largo recorrido y su rueda delantera de 19 pulgadas la hacen capaz de afrontar caminos irregulares con facilidad. Además, incorpora frenos ABS de serie y una instrumentación digital moderna. La CB500X es una excelente opción para aquellos que buscan una moto fiable y polivalente."
+    },
+    {
+      "id": 8,
+      "name": "Super Duke R",
+      "brand": "KTM",
+      "image": "../imgs/motos/ktm-super-duke-r.webp",
+      "description": "La KTM Super Duke R es una naked de alto rendimiento diseñada para los amantes de la adrenalina. Equipada con un poderoso motor V-twin de 1301 cc, esta motocicleta es sinónimo de potencia bruta y aceleración explosiva. Su chasis ligero y su suspensión ajustable garantizan un manejo ágil y preciso, permitiendo tomar curvas con confianza. Además, cuenta con una serie de ayudas electrónicas, como el control de tracción, los modos de conducción y el ABS en curva, que optimizan la seguridad sin comprometer la emoción. Con un diseño agresivo y una ergonomía optimizada para la conducción deportiva, la Super Duke R es la reina indiscutible de las naked de gran cilindrada."
+    },
+    {
+      "id": 9,
+      "name": "Duke 390",
+      "brand": "KTM",
+      "image": "../imgs/motos/ktm-duke-390.webp",
+      "description": "La KTM Duke 390 es una motocicleta ligera y ágil, ideal tanto para conductores principiantes como para pilotos experimentados que buscan una moto divertida y dinámica. Su motor monocilíndrico de 373 cc ofrece una excelente relación peso-potencia, garantizando una aceleración rápida y un comportamiento deportivo. Su chasis de acero multitubular y su suspensión WP brindan una estabilidad excepcional, mientras que su diseño agresivo y su iluminación LED le otorgan una apariencia moderna e imponente. Además, incorpora una pantalla TFT a color con conectividad y un sistema de frenos ABS de doble canal para una mayor seguridad. La Duke 390 es perfecta para moverse con estilo en la ciudad y disfrutar de rutas reviradas."
+    },
+    {
+      "id": 10,
+      "name": "Ninja ZX-6R",
+      "brand": "Kawasaki",
+      "image": "../imgs/motos/kawasaki-ninja-zx6r.webp",
+      "description": "La Kawasaki Ninja ZX-6R es una motocicleta supersport diseñada para ofrecer un rendimiento excepcional tanto en carretera como en pista. Su motor de 636 cc proporciona una entrega de potencia explosiva en altas revoluciones, permitiendo una experiencia de conducción emocionante. Equipada con un chasis ligero, suspensiones ajustables y frenos de alto rendimiento, la ZX-6R ofrece una maniobrabilidad precisa y un control total en cualquier situación. Además, cuenta con avanzadas asistencias electrónicas como control de tracción, modos de conducción y cambio rápido, optimizando la respuesta del motor en cada aceleración. Su diseño aerodinámico y su carenado agresivo refuerzan su carácter deportivo, convirtiéndola en una de las favoritas del segmento."
+    },
+    {
+      "id": 11,
+      "name": "Z900",
+      "brand": "Kawasaki",
+      "image": "../imgs/motos/kawasaki-z900.webp",
+      "description": "La Kawasaki Z900 es una motocicleta naked que combina un diseño agresivo con un rendimiento impresionante. Su motor de cuatro cilindros y 948 cc ofrece una aceleración potente y suave, ideal para los amantes de la velocidad y la adrenalina. Con un chasis multitubular de acero y suspensiones ajustables, la Z900 proporciona una conducción ágil y estable en cualquier tipo de carretera. Además, está equipada con un avanzado sistema de control de tracción, modos de conducción y frenos ABS, garantizando seguridad y confianza en cada curva. Su ergonomía mejorada y su iluminación LED completa refuerzan su carácter moderno y deportivo, convirtiéndola en una de las naked más populares de su categoría."
+    },
+    {
+      "id": 12,
+      "name": "Sportster S",
+      "brand": "Harley Davidson",
+      "image": "../imgs/motos/harley-davidson-sportster-s.webp",
+      "description": "La Harley-Davidson Sportster S es una cruiser moderna que redefine la tradición de la marca con un enfoque más deportivo y dinámico. Equipada con el potente motor Revolution Max 1250T, esta moto ofrece una entrega de potencia contundente y un sonido característico. Su diseño combina elementos clásicos con tecnología avanzada, incluyendo un cuadro de instrumentos TFT con conectividad Bluetooth y múltiples modos de conducción. La Sportster S destaca por su bajo centro de gravedad y su postura de manejo agresiva, lo que la hace ideal tanto para la ciudad como para escapadas en carretera. Con su combinación de estilo, rendimiento y tecnología, es una opción atractiva para quienes buscan una Harley diferente y emocionante."
+    },
+    {
+      "id": 13,
+      "name": "Interceptor 650",
+      "brand": "Royal Enfield",
+      "image": "../imgs/motos/royal-enfield-interceptor-650.webp",
+      "description": "La Royal Enfield Interceptor 650 es una motocicleta clásica moderna que evoca el espíritu de las roadsters británicas de los años 60. Equipada con un motor bicilíndrico de 648 cc, ofrece una conducción suave y equilibrada, ideal tanto para la ciudad como para viajes de media distancia. Su diseño retro se complementa con acabados de alta calidad, un chasis desarrollado en colaboración con Harris Performance y una posición de manejo cómoda. Además, cuenta con frenos ABS de serie y una suspensión bien calibrada para garantizar estabilidad y seguridad. La Interceptor 650 es la elección perfecta para quienes buscan una moto elegante y accesible con el encanto de las clásicas."
+    },
+    {
+      "id": 14,
+      "name": "Hayabusa",
+      "brand": "Suzuki",
+      "image": "../imgs/motos/suzuki-hayabusa.webp",
+      "description": "La Suzuki Hayabusa es una de las motocicletas más icónicas del mundo, famosa por su velocidad extrema y su aerodinámica inconfundible. Equipada con un motor de 1340 cc, ofrece una aceleración brutal y un desempeño excepcional tanto en rectas como en curvas. Su chasis optimizado y su electrónica avanzada, que incluye control de tracción, modos de conducción y cambio rápido, garantizan un manejo preciso y seguro. Con su diseño estilizado y su carenado envolvente, la Hayabusa sigue siendo una referencia en el segmento de las motos deportivas de alta cilindrada. Es la opción ideal para quienes buscan una máquina potente, sofisticada y con un legado legendario en el motociclismo."
+    },
+    {
+      "id": 15,
+      "name": "V-Strom 650",
+      "brand": "Suzuki",
+      "image": "../imgs/motos/suzuki-vstrom-650.webp",
+      "description": "La Suzuki V-Strom 650 es una motocicleta de aventura diseñada para ofrecer confort y versatilidad en cualquier tipo de terreno. Su motor bicilíndrico en V de 645 cc proporciona una entrega de potencia lineal y eficiente, ideal tanto para la ciudad como para largas travesías. Su ergonomía cómoda, parabrisas ajustable y suspensión de largo recorrido la hacen perfecta para viajes largos sin fatiga. Además, cuenta con control de tracción ajustable y frenos ABS para mejorar la seguridad en distintas condiciones. La V-Strom 650 es una opción confiable para los motociclistas que buscan una máquina equilibrada, con buen rendimiento y apta para la aventura."
+    },
+    {
+      "id": 16,
+      "name": "Bonneville T120",
+      "brand": "Triumph",
+      "image": "../imgs/motos/triumph-bonneville-t120.webp",
+      "description": "La Triumph Bonneville T120 es una motocicleta clásica con el inconfundible estilo británico que ha marcado generaciones. Su motor bicilíndrico en paralelo de 1200 cc ofrece una conducción refinada y llena de carácter, con una entrega de par motor contundente a bajas revoluciones. Su diseño atemporal se complementa con tecnología moderna, como el control de tracción, los modos de conducción y la iluminación LED. La posición de manejo cómoda y su excelente calidad de acabados la convierten en una opción perfecta para quienes buscan una moto elegante y con un desempeño excepcional. La Bonneville T120 es la combinación perfecta de tradición y modernidad en una motocicleta."
+    },
+    {
+      "id": 17,
+      "name": "Street Triple RS",
+      "brand": "Triumph",
+      "image": "../imgs/motos/triumph-street-triple-rs.webp",
+      "description": "La Triumph Street Triple RS es una de las naked deportivas más refinadas y equilibradas del mercado. Equipada con un motor tricilíndrico de 765 cc derivado de Moto2, ofrece una potencia explosiva y una respuesta ágil. Su chasis ligero y sus suspensiones Öhlins de alto rendimiento garantizan un manejo preciso y estable en cualquier situación. Además, cuenta con una serie de ayudas electrónicas como control de tracción, ABS en curva y modos de conducción personalizables. Su diseño agresivo y su instrumentación digital TFT refuerzan su carácter moderno y tecnológico. La Street Triple RS es la elección perfecta para quienes buscan emociones fuertes en una naked deportiva."
+    },
+    {
+      "id": 18,
+      "name": "Tiger 900 Rally",
+      "brand": "Triumph",
+      "image": "../imgs/motos/triumph-tiger-900-rally.webp",
+      "description": "La Triumph Tiger 900 Rally es una motocicleta diseñada para la aventura todoterreno, con un motor tricilíndrico de 900 cc que proporciona una entrega de potencia lineal y controlada. Su suspensión de largo recorrido y su rueda delantera de 21 pulgadas la hacen ideal para enfrentar cualquier tipo de terreno con confianza. Además, cuenta con una serie de tecnologías avanzadas, como modos de conducción, control de tracción optimizado y pantalla TFT con conectividad. Su ergonomía mejorada y su depósito de gran capacidad la convierten en una excelente opción para los viajes largos. La Tiger 900 Rally es la compañera ideal para los motociclistas que buscan explorar sin límites."
+    },
+    {
+      "id": 19,
+      "name": "Rocket 3",
+      "brand": "Triumph",
+      "image": "../imgs/motos/triumph-rocket-3.webp",
+      "description": "La Triumph Rocket 3 es una cruiser de alto rendimiento equipada con el motor tricilíndrico más grande del mundo en una motocicleta de producción: 2500 cc de pura potencia. Su torque impresionante garantiza una aceleración impactante, mientras que su chasis optimizado y su suspensión de alta gama proporcionan un manejo sorprendentemente ágil para su tamaño. Además, cuenta con una serie de tecnologías avanzadas, como control de tracción, modos de conducción y frenos Brembo de alto rendimiento. Su diseño musculoso y su presencia imponente la convierten en una moto única, ideal para quienes buscan una experiencia de conducción inigualable."
+    },
+    {
+      "id": 20,
+      "name": "MT-07",
+      "brand": "Yamaha",
+      "image": "../imgs/motos/yamaha-mt07.webp",
+      "description": "La Yamaha MT-07 es una motocicleta naked que se ha ganado una gran reputación por su equilibrio entre rendimiento, agilidad y accesibilidad. Equipada con un motor bicilíndrico en paralelo de 689 cc con tecnología Crossplane, ofrece una entrega de potencia lineal y una aceleración contundente, ideal tanto para la ciudad como para carreteras sinuosas. Su chasis ligero y su ergonomía cómoda proporcionan una excelente maniobrabilidad, haciendo que la conducción sea divertida y segura. Además, cuenta con un diseño agresivo y moderno, iluminación LED y una instrumentación digital de última generación. La MT-07 es una de las mejores opciones para quienes buscan una moto versátil, emocionante y con un gran valor por su precio."
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(50, 56, 63);
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  align-items: center;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  text-decoration: overline;
+}
+
+.logoPagina {
+  width: 7rem;
+  max-width: 100%;
+  height: auto;
+  margin-left: 60%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 3%;
+}
+
+.categoriasEncabezado {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.header-carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.carrito-icono {
+  position: absolute;
+  top: 0.8rem;
+  right: 2.5rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(211, 100%, 54%);
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.carrito-icono:hover {
+  background-color: hsl(211, 100%, 44%);
+  border: 2px solid white;
+}
+
+.carrito-desplegable {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 0.2rem;
+  right: 7.5rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.1875rem 0.4375rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 40rem;
+}
+
+.carrito-desplegable.show {
+  display: block;
+}
+
+.carrito-desplegable::before {
+  content: "";
+  position: absolute;
+  top: -0.625rem;
+  right: 1.25rem;
+  border-width: 0.625rem;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+.carrito-desplegable ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carrito-desplegable ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 0;
+  border-bottom: 0.0625rem solid #ddd;
+}
+
+.carrito-desplegable ul li span {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.carrito-desplegable ul li .cantidad-control {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.carrito-desplegable ul li button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  padding: 0.125rem 0.3125rem;
+  margin: 0 2rem;
+  width: 2rem;
+}
+
+.carrito-desplegable ul li button:hover {
+  background-color: #0056b3;
+  
+}
+
+.carrito-desplegable ul li .cantidad {
+  margin: 0 0.625rem;
+}
+
+.carrito-desplegable ul li .cantidad button:hover {
+  background-color: #0056b3;
+}
+
+.carrito-desplegable ul li .eliminar {
+  width: 25%;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  padding: 0.35rem;
+  margin-left: 1rem;
+}
+
+.carrito-desplegable ul li .eliminar:hover {
+  background-color: #c82333;
+}
+
+.carrito-desplegable ul li:last-child {
+  border-bottom: none;
+}
+
+.carrito-desplegable p {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 0.8rem;
+}
+
+.carrito-desplegable button {
+  width: 100%;
+  padding: 0.625rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  margin-top: 0.625rem;
+}
+
+.carrito-desplegable button:hover {
+  background-color: #0056b3;
+}
+
+.categoriasPiezas {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 7rem;
+}
+
+.producto {
+  flex: 1 1 calc(33.333% - 5%);
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.producto button{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+  font-size: 1.01rem;
+}
+
+.producto button:hover {
+  background-color: #3697ff;
+  margin-top: 0.4rem;
+  border: 2px solid #ffffff;
+}
+
+img {
+  width: 10em;
+}
+
+/* Media Queries para hacerlo responsive */
+@media (max-width: 768px) {
+  .encabezado {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .logoPagina {
+    align-self: flex-start; /* Alinea el logo a la izquierda */
+    margin-left: 0; /* Asegura que no haya margen a la izquierda */
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoriasEncabezado {
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .producto {
+    flex: 1 1 calc(50% - 5%);
+  }
+
+  img {
+    width: 8em;
+  }
+}
+
+/* Media Query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .producto {
+    flex: 1 1 100%;
+  }
+
+  img {
+    width: 6em;
+  }
+}

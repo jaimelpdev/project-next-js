@@ -1,0 +1,145 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(50, 56, 63);
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  align-items: center;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  text-decoration: overline;
+}
+
+.logoPagina {
+  width: 7rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 3%;
+}
+
+.categoriasEncabezado {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.subtitulo {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.textoSubtitulo {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.jeskoVSchiron {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos bajen automáticamente */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Espacio entre imagen y texto */
+}
+
+.jeskoVSchironImg {
+  width: 100%; /* En pantallas pequeñas, la imagen ocupa todo el ancho */
+  text-align: center;
+}
+
+.jeskoVSchironImg img {
+  width: 100%; /* Asegura que la imagen no sobresalga */
+  max-width: 500px; /* Tamaño máximo para evitar imágenes muy grandes */
+}
+
+.jeskoVSchironTexto {
+  width: 100%; /* En pantallas pequeñas, el texto ocupa todo el ancho */
+  text-align: center;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .encabezado {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .logoPagina {
+    align-self: flex-start; /* Alinea el logo a la izquierda */
+    margin-left: 0; /* Asegura que no haya margen a la izquierda */
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoriasEncabezado {
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 768px) {
+  .logoPagina {
+    margin-left: 60%;
+    margin-right: auto;
+    display: block;
+  }
+
+  .jeskoVSchiron {
+    flex-wrap: nowrap; /* En pantallas grandes, mantiene la estructura en fila */
+    flex-direction: row;
+  }
+
+  .jeskoVSchironImg {
+    width: 60%; /* Aumenta el ancho de la imagen */
+  }
+
+  .jeskoVSchironImg img {
+    width: 100%; /* Asegura que la imagen no sobresalga */
+    max-width: 900px; /* Tamaño máximo aumentado para pantallas grandes */
+  }
+
+  .jeskoVSchironTexto {
+    width: 40%; /* Ajusta el ancho del texto */
+    text-align: center; /* Centra el texto */
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    margin-right: 4%;
+  }
+
+  .subtitulo {
+    font-size: 2rem; /* Aumenta el tamaño del subtítulo */
+    text-align: center; /* Centra el subtítulo */
+  }
+
+  .textoSubtitulo {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto del subtítulo */
+    text-align: center; /* Centra el texto del subtítulo */
+  }
+}
