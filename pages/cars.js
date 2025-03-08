@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/header";
 
-export default function Coches() {
+export default function Cars() {
   const [brands, setBrands] = useState([]);
   const [models, setModels] = useState([]);
   const [selectedBrand, setSelectedBrand] = useState("");
@@ -50,20 +50,21 @@ export default function Coches() {
           if (selectedCar) {
             setSelectedModel(selectedCar);
           } else {
-            console.error("Coche no encontrado");
+            console.error("Car not found");
           }
         })
-        .catch((error) => console.error("Error al obtener los datos:", error));
+        .catch((error) => console.error("Error fetching data:", error));
     }
   };
 
   return (
     <div>
       <Header />
+      <h2>Cars</h2>
       <form id="cars_form" onSubmit={handleSubmit}>
-        <label htmlFor="car_brand">Fabricante:</label>
+        <label htmlFor="car_brand">Brand:</label>
         <select id="car_brand" onChange={handleBrandChange}>
-          <option value="">- Por favor selecciona -</option>
+          <option value="">- Please select -</option>
           {brands.map((brand) => (
             <option key={brand} value={brand}>
               {brand}
@@ -71,13 +72,13 @@ export default function Coches() {
           ))}
         </select>
         <br />
-        <label htmlFor="car_name">Modelo:</label>
+        <label htmlFor="car_name">Model:</label>
         <select
           id="car_name"
           onChange={handleModelChange}
           disabled={!selectedBrand}
         >
-          <option value="">- Por favor selecciona -</option>
+          <option value="">- Please select -</option>
           {models.map((model) => (
             <option key={model.id} value={model.id}>
               {model.name}
@@ -86,18 +87,14 @@ export default function Coches() {
         </select>
         <br />
         <button type="submit" id="car_submit" disabled={!selectedModel}>
-          Mostrar vehículo
+          Show vehicle
         </button>
       </form>
       {selectedModel && (
         <div className="carDetailsContainer">
-          <h2>Detalles del Coche</h2>
+          <h2>Car's details</h2>
           <div id="carDetails">
-            <img
-              id="carImage"
-              src={selectedModel.image}
-              alt="Imagen del coche"
-            />
+            <img id="carImage" src={selectedModel.image} alt="Car's image" />
             <div className="carDescriptionContainer">
               <p id="carDescription">{selectedModel.description}</p>
             </div>

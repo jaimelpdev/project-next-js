@@ -6,13 +6,25 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.encabezado {
+.header {
   display: flex;
   justify-content: space-between;
   background-color: white;
   color: black;
   align-items: center;
   padding: 1rem;
+}
+
+.headerCenter {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 25rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 a {
@@ -24,7 +36,7 @@ a:hover {
   text-decoration: overline;
 }
 
-.logoPagina {
+.pageLogo {
   width: 7rem;
   max-width: 100%;
   height: auto;
@@ -41,18 +53,18 @@ a:hover {
   margin-right: 3%;
 }
 
-.categoriasEncabezado {
+.categoriesHeader {
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
 }
-.subtitulo {
+.subtitle {
   text-align: center;
   margin-top: 2rem;
   font-size: 2rem;
   color: white;
 }
 
-.textoSubtitulo {
+.subtitleText {
   text-align: center;
   padding-bottom: 2rem;
   font-size: 1.125rem;
@@ -88,7 +100,7 @@ a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el formulario */
+/* Styles for the form */
 form {
   background-color: rgb(75, 75, 75);
   padding: 2rem;
@@ -133,17 +145,17 @@ form button:hover {
   background-color: #0056b3;
 }
 
-/* Media Queries para hacerlo responsive */
+/* Media Queries to make it responsive */
 @media (max-width: 768px) {
-  .encabezado {
+  .header {
     flex-direction: column;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .logoPagina {
-    align-self: flex-start; /* Alinea el logo a la izquierda */
-    margin-left: 0; /* Asegura que no haya margen a la izquierda */
+  .pageLogo {
+    align-self: flex-start; /* Align the logo to the left */
+    margin-left: 0; /* Ensure there is no left margin */
   }
 
   .menu {
@@ -151,7 +163,7 @@ form button:hover {
     align-items: center;
   }
 
-  .categoriasEncabezado {
+  .categoriesHeader {
     padding-right: 0;
     padding-bottom: 1rem;
   }
@@ -164,11 +176,11 @@ form button:hover {
 }
 
 @media (max-width: 480px) {
-  .subtitulo {
+  .subtitle {
     font-size: 1.5rem;
   }
 
-  .textoSubtitulo {
+  .subtitleText {
     font-size: 1rem;
   }
 

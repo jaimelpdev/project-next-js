@@ -1,24 +1,27 @@
 import Link from "next/link";
 
 const Header = () => (
-  <div className="encabezado">
+  <div className="header">
     <Link href="/">
-      <img className="logoPagina" src="/imgs/logo.webp" alt="Logo" />
+      <img className="pageLogo" src="/imgs/logo.webp" alt="Logo" />
     </Link>
+    <div className="headerCenter">
+      <h1>All About Cars</h1>
+    </div>
     <ul className="menu">
-      <li className="categoriasEncabezado">
+      <li className="categoriesHeader">
         <b>
-          <Link href="/coches">Coches</Link>
+          <Link href="/cars">Cars</Link>
         </b>
       </li>
-      <li className="categoriasEncabezado">
+      <li className="categoriesHeader">
         <b>
-          <Link href="/motos">Motos</Link>
+          <Link href="/motos">Motorcycles</Link>
         </b>
       </li>
-      <li className="categoriasEncabezado">
+      <li className="categoriesHeader">
         <b>
-          <Link href="/tiendaPiezas">Tienda</Link>
+          <Link href="/partsStore">Store</Link>
         </b>
       </li>
     </ul>

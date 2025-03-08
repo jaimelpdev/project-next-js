@@ -1,8 +1,8 @@
 /* filepath: /proyectoNextJS/styles/globals.css */
-@import './coches.css';
+@import './cars.css';
 @import './index.css';
 @import './motos.css';
-@import './tiendaPiezas.css';
+@import './partsStore.css';
 
 :root {
   --background: #ffffff;

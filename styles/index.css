@@ -6,13 +6,19 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.encabezado {
+.header {
   display: flex;
   justify-content: space-between;
   background-color: white;
   color: black;
   align-items: center;
   padding: 1rem;
+}
+
+.headerCenter {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 25rem;
 }
 
 a {
@@ -24,7 +30,7 @@ a:hover {
   text-decoration: overline;
 }
 
-.logoPagina {
+.pageLogo {
   width: 7rem;
 }
 
@@ -38,19 +44,19 @@ a:hover {
   margin-right: 3%;
 }
 
-.categoriasEncabezado {
+.categoriesHeader {
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
 }
 
-.subtitulo {
+.subtitle {
   text-align: center;
   margin-top: 1rem;
   font-size: 1.5rem;
   color: white;
 }
 
-.textoSubtitulo {
+.subtitleText {
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
@@ -59,38 +65,38 @@ a:hover {
 
 .jeskoVSchiron {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos bajen automáticamente */
+  flex-wrap: wrap; /* Allows elements to drop automatically */
   justify-content: center;
   align-items: center;
-  gap: 1rem; /* Espacio entre imagen y texto */
+  gap: 1rem; /* Space between image and text */
 }
 
 .jeskoVSchironImg {
-  width: 100%; /* En pantallas pequeñas, la imagen ocupa todo el ancho */
+  width: 100%; /* On small screens, the image occupies the entire width */
   text-align: center;
 }
 
 .jeskoVSchironImg img {
-  width: 100%; /* Asegura que la imagen no sobresalga */
-  max-width: 500px; /* Tamaño máximo para evitar imágenes muy grandes */
+  width: 100%; /* Ensures the image does not overflow */
+  max-width: 500px; /* Maximum size to avoid very large images */
 }
 
-.jeskoVSchironTexto {
-  width: 100%; /* En pantallas pequeñas, el texto ocupa todo el ancho */
+.jeskoVSchironText {
+  width: 100%; /* On small screens, the text occupies the entire width */
   text-align: center;
 }
 
-/* Media Queries para pantallas pequeñas */
+/* Media Queries for small screens */
 @media (max-width: 768px) {
-  .encabezado {
+  .header {
     flex-direction: column;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .logoPagina {
-    align-self: flex-start; /* Alinea el logo a la izquierda */
-    margin-left: 0; /* Asegura que no haya margen a la izquierda */
+  .pageLogo {
+    align-self: flex-start; /* Align the logo to the left */
+    margin-left: 0; /* Ensure there is no left margin */
   }
 
   .menu {
@@ -98,48 +104,48 @@ a:hover {
     align-items: center;
   }
 
-  .categoriasEncabezado {
+  .categoriesHeader {
     padding-right: 0;
     padding-bottom: 1rem;
   }
 }
 
-/* Media Queries para pantallas más grandes */
+/* Media Queries for larger screens */
 @media (min-width: 768px) {
-  .logoPagina {
+  .pageLogo {
     margin-left: 60%;
     margin-right: auto;
     display: block;
   }
 
   .jeskoVSchiron {
-    flex-wrap: nowrap; /* En pantallas grandes, mantiene la estructura en fila */
+    flex-wrap: nowrap; /* On large screens, maintains the row structure */
     flex-direction: row;
   }
 
   .jeskoVSchironImg {
-    width: 60%; /* Aumenta el ancho de la imagen */
+    width: 60%; /* Increases the width of the image */
   }
 
   .jeskoVSchironImg img {
-    width: 100%; /* Asegura que la imagen no sobresalga */
-    max-width: 900px; /* Tamaño máximo aumentado para pantallas grandes */
+    width: 100%; /* Ensures the image does not overflow */
+    max-width: 900px; /* Increased maximum size for large screens */
   }
 
-  .jeskoVSchironTexto {
-    width: 40%; /* Ajusta el ancho del texto */
-    text-align: center; /* Centra el texto */
-    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+  .jeskoVSchironText {
+    width: 40%; /* Adjusts the width of the text */
+    text-align: center; /* Centers the text */
+    font-size: 1.2rem; /* Increases the text size */
     margin-right: 4%;
   }
 
-  .subtitulo {
-    font-size: 2rem; /* Aumenta el tamaño del subtítulo */
-    text-align: center; /* Centra el subtítulo */
+  .subtitle {
+    font-size: 2rem; /* Increases the subtitle size */
+    text-align: center; /* Centers the subtitle */
   }
 
-  .textoSubtitulo {
-    font-size: 1.5rem; /* Aumenta el tamaño del texto del subtítulo */
-    text-align: center; /* Centra el texto del subtítulo */
+  .subtitleText {
+    font-size: 1.5rem; /* Increases the subtitle text size */
+    text-align: center; /* Centers the subtitle text */
   }
 }

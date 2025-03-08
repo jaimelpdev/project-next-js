@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/header";
 
-export default function Motos() {
+export default function Motorcycles() {
   const [brands, setBrands] = useState([]);
   const [models, setModels] = useState([]);
   const [selectedBrand, setSelectedBrand] = useState("");
@@ -11,9 +11,16 @@ export default function Motos() {
     fetch("/json/motos.json")
       .then((response) => response.json())
       .then((data) => {
-        const uniqueBrands = [...new Set(data.motos.map((moto) => moto.brand))];
-        setBrands(uniqueBrands);
-      });
+        if (Array.isArray(data.motos)) {
+          const uniqueBrands = [
+            ...new Set(data.motos.map((moto) => moto.brand)),
+          ];
+          setBrands(uniqueBrands);
+        } else {
+          console.error("Invalid data format: motos is not an array");
+        }
+      })
+      .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   const handleBrandChange = (e) => {
@@ -23,11 +30,16 @@ export default function Motos() {
     fetch("/json/motos.json")
       .then((response) => response.json())
       .then((data) => {
-        const filteredModels = data.motos.filter(
-          (moto) => moto.brand === brand
-        );
-        setModels(filteredModels);
-      });
+        if (Array.isArray(data.motos)) {
+          const filteredModels = data.motos.filter(
+            (moto) => moto.brand === brand
+          );
+          setModels(filteredModels);
+        } else {
+          console.error("Invalid data format: motos is not an array");
+        }
+      })
+      .catch((error) => console.error("Error fetching data:", error));
   };
 
   const handleModelChange = (e) => {
@@ -35,9 +47,14 @@ export default function Motos() {
     fetch("/json/motos.json")
       .then((response) => response.json())
       .then((data) => {
-        const model = data.motos.find((moto) => moto.id == modelId);
-        setSelectedModel(model);
-      });
+        if (Array.isArray(data.motos)) {
+          const model = data.motos.find((moto) => moto.id == modelId);
+          setSelectedModel(model);
+        } else {
+          console.error("Invalid data format: motos is not an array");
+        }
+      })
+      .catch((error) => console.error("Error fetching data:", error));
   };
 
   const handleSubmit = (e) => {
@@ -46,26 +63,31 @@ export default function Motos() {
       fetch("/json/motos.json")
         .then((response) => response.json())
         .then((data) => {
-          const selectedMoto = data.motos.find(
-            (moto) => moto.id == selectedModel.id
-          );
-          if (selectedMoto) {
-            setSelectedModel(selectedMoto);
+          if (Array.isArray(data.motos)) {
+            const selectedMoto = data.motos.find(
+              (moto) => moto.id == selectedModel.id
+            );
+            if (selectedMoto) {
+              setSelectedModel(selectedMoto);
+            } else {
+              console.error("Motorcycle not found");
+            }
           } else {
-            console.error("Moto no encontrada");
+            console.error("Invalid data format: motos is not an array");
           }
         })
-        .catch((error) => console.error("Error al obtener los datos:", error));
+        .catch((error) => console.error("Error fetching data:", error));
     }
   };
 
   return (
     <div>
       <Header />
+      <h2>Motorcycles</h2>
       <form id="motos_form" onSubmit={handleSubmit}>
-        <label htmlFor="moto_brand">Fabricante:</label>
+        <label htmlFor="moto_brand">Brand:</label>
         <select id="moto_brand" onChange={handleBrandChange}>
-          <option value="">- Por favor selecciona -</option>
+          <option value="">- Please select -</option>
           {brands.map((brand) => (
             <option key={brand} value={brand}>
               {brand}
@@ -73,13 +95,13 @@ export default function Motos() {
           ))}
         </select>
         <br />
-        <label htmlFor="moto_name">Modelo:</label>
+        <label htmlFor="moto_name">Model:</label>
         <select
           id="moto_name"
           onChange={handleModelChange}
           disabled={!selectedBrand}
         >
-          <option value="">- Por favor selecciona -</option>
+          <option value="">- Please select -</option>
           {models.map((model) => (
             <option key={model.id} value={model.id}>
               {model.name}
@@ -88,17 +110,17 @@ export default function Motos() {
         </select>
         <br />
         <button type="submit" id="moto_submit" disabled={!selectedModel}>
-          Mostrar vehículo
+          Show vehicle
         </button>
       </form>
       {selectedModel && (
         <div className="motoDetailsContainer">
-          <h2>Detalles de la Moto</h2>
+          <h2>Motorcycle Details</h2>
           <div id="motoDetails">
             <img
               id="motoImage"
               src={selectedModel.image}
-              alt="Imagen de la moto"
+              alt="Motorcycle image"
             />
             <div className="motoDescriptionContainer">
               <p id="motoDescription">{selectedModel.description}</p>
