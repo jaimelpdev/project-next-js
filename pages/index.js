@@ -4,49 +4,119 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <h2 className="subtitle">DESCRIPTION ABOUT THE PAGE</h2>
-      <p className="subtitleText">
-        This is a page where you will find information about different vehicles
-        in the automotive world <br />
-        <br />
-        From regular cars to supercars
-        <br />
-        <br />
-        Below I leave some information about some of the news, in my opinion,
-        most relevant today about the motor world.
+      <h2 className="subtitle">Welcome to ByteMasters!</h2>
+      <p className="presentationText">
+        Your one-stop shop for the latest and greatest in computer technology.
+        Whether you're a gamer, a professional, or just looking for a reliable
+        machine, we've got you covered.
       </p>
-      <h2 className="subtitle">
-        THE GREATEST RIVALRY OF TODAY ABOUT ROAD CARS
-      </h2>
-      <div className="jeskoVSchiron">
-        <div className="jeskoVSchironImg">
+
+      <h2 className="subtitle">🔥 Special Offers 🔥</h2>
+      <div className="offers">
+        <div className="offersItem">
+          <img src="/imgs/notebooks/dell-xps-13.webp" alt="Dell XPS 13" />
+          <p>
+            <b>Dell XPS 13</b> - Premium ultrabook with Intel Core i7, 16GB RAM,
+            and 512GB SSD. Compact and powerful for work and entertainment.
+          </p>
+          <p>
+            <b>Price:</b> $1399
+          </p>
+        </div>
+        <div className="offersItem">
           <img
-            src="/imgs/home/3 - Bugatti Chiron Pur Sport VS Koenigsegg Jesko (front).jpg"
-            alt="Photo of a Koenigsegg Jesko VS a Bugatti Chiron"
+            src="/imgs/notebooks/apple-macbook-pro-16.webp"
+            alt="MacBook Pro 16"
+          />
+          <p>
+            <b>MacBook Pro 16</b> - High-performance laptop with Apple M4+ chip,
+            16GB RAM, and 1TB SSD. Perfect for professionals and creatives.
+          </p>
+          <p>
+            <b>Price:</b> $2399
+          </p>
+        </div>
+        <div className="offersItem">
+          <img
+            src="/imgs/computers/asus_rog_strix_ga35.webp"
+            alt="ASUS ROG Strix GA35"
+          />
+          <p>
+            <b>ASUS ROG Strix GA35</b> - High-end gaming desktop with AMD Ryzen
+            9, NVIDIA RTX 4080, 32GB RAM, and 2TB SSD. Built for gamers.
+          </p>
+          <p>
+            <b>Price:</b> $2000
+          </p>
+        </div>
+        <div className="offersItem">
+          <img
+            src="/imgs/computers/lenovo_legion_t5.webp"
+            alt="Lenovo Legion T5"
+          />
+          <p>
+            <b>Lenovo Legion T5</b> - Gaming desktop with AMD Ryzen 7, NVIDIA
+            GeForce RTX 2070, 16GB RAM, and 1TB SSD. Designed for gamers who
+            need top-notch performance.
+          </p>
+          <p>
+            <b>Price:</b> $1400
+          </p>
+        </div>
+      </div>
+
+      <h2 className="subtitle">🆕 Latest Arrivals 🆕</h2>
+      <div className="subtitleTextContainer">
+        <p className="subtitleTextLeft">
+          Check out the newest additions to our store! From the latest NVIDIA
+          RTX 5090 GPUs to the powerful AMD Ryzen 9 processors, we have
+          everything you need to build your dream PC.
+        </p>
+        <p className="subtitleTextCenter">
+          Explore our collection of high-performance components and accessories.
+          Perfect for gamers, creators, and tech enthusiasts.
+        </p>
+        <p className="subtitleTextRight">
+          Stay ahead of the curve with our cutting-edge products. Shop now and
+          be the first to experience the future of computing.
+        </p>
+      </div>
+
+      <h2 className="subtitle">💻 Featured Products 💻</h2>
+      <div className="featured">
+        <div className="featuredImg">
+          <img
+            src="/imgs/computers/asus_rog_strix_ga35dx.webp"
+            alt="Featured Product"
           />
         </div>
-        <div className="jeskoVSchironText">
+        <div className="featuredText">
           <p>
-            Bugatti, after breaking the 300 mph barrier in 2019, has taken a
-            step further towards extreme luxury with the Chiron line, although
-            many wonder if the brand will attempt to break the top speed record
-            again. Bugatti, however, has shown a more focused approach on
-            exclusivity and luxurious driving experience, highlighting in 2024
-            its ability to combine speed and comfort in an incomparable way.
-            This leaves Koenigsegg as the most aggressive contender in the
-            pursuit of new records.
+            <b>ASUS ROG Strix GA35DX</b> - The ultimate gaming desktop with an
+            AMD Ryzen 9 processor, NVIDIA GeForce RTX 4090, 64GB RAM, and 2TB
+            SSD. Perfect for gamers who demand the best.
           </p>
           <p>
-            In 2024, the rivalry between the Koenigsegg Jesko and the Bugatti
-            Chiron has grown with the expectation of breaking speed records.
-            Koenigsegg seeks to surpass 500 km/h with the Jesko Absolut, while
-            Bugatti continues to defend its brand after reaching 490 km/h in
-            2019 with the Chiron Super Sport 300+. Although Koenigsegg focuses
-            on extreme engineering and top speed, Bugatti has bet more on luxury
-            and driving experience. This year, the automotive world awaits new
-            record attempts that could define the fastest car.
+            <b>Price:</b> $2700
           </p>
         </div>
+      </div>
+
+      <h2 className="subtitle">Why Choose ByteMasters?</h2>
+      <div className="subtitleTextContainer">
+        <p className="subtitleTextLeft">
+          At ByteMasters, we pride ourselves on offering top-quality products at
+          competitive prices. Our team of experts is here to help you find the
+          perfect solution for your needs.
+        </p>
+        <p className="subtitleTextCenter">
+          Enjoy fast shipping, excellent customer service, and a wide range of
+          products to choose from. Your satisfaction is our priority.
+        </p>
+        <p className="subtitleTextRight">
+          Join our community of tech enthusiasts and discover why ByteMasters is
+          the go-to destination for all your computing needs.
+        </p>
       </div>
     </div>
   );

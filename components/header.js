@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from 'react';
 
 const Header = () => (
   <div className="header">
@@ -6,22 +7,22 @@ const Header = () => (
       <img className="pageLogo" src="/imgs/logo.webp" alt="Logo" />
     </Link>
     <div className="headerCenter">
-      <h1>All About Cars</h1>
+      <h1>BYTEMASTERS</h1>
     </div>
     <ul className="menu">
       <li className="categoriesHeader">
         <b>
-          <Link href="/cars">Cars</Link>
+          <Link href="/general/computers">Computers</Link>
         </b>
       </li>
       <li className="categoriesHeader">
         <b>
-          <Link href="/motos">Motorcycles</Link>
+          <Link href="/general/notebooks">Notebooks</Link>
         </b>
       </li>
       <li className="categoriesHeader">
         <b>
-          <Link href="/partsStore">Store</Link>
+          <Link href="/general/components">Components</Link>
         </b>
       </li>
     </ul>
